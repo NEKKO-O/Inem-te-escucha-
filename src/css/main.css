@@ -1,0 +1,82 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 1;
+  background: transparent linear-gradient(180deg, #52e5ff 0%, #88edff 100%) 0%
+    0% no-repeat padding-box;
+  height: 60px;
+  padding: 45px 0;
+}
+
+.logoINEM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 140px;
+  height: 140px;
+  opacity: 1;
+}
+
+.logosHeader {
+  padding: 8px;
+  width: 45px;
+  height: 45px;
+  opacity: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  border: none;
+  height: 48px;
+  width: 60px;
+  background: white;
+  cursor: pointer;
+}
+
+.Flecha {
+  border-radius: 0 48% 48% 0;
+}
+
+.Salida {
+  border-radius: 48% 0 0 48%;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tamañoImagen {
+  width: 151px;
+  height: 201px;
+  margin: 20px;
+}
+
+.texto {
+  text-align: center;
+  font-size: 25px !important;
+}
+
+.margen {
+  margin: 30px;
+}
+
+.tamañoFoto {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.datosDocente {
+  background-color: grey;
+  color: white;
+}
