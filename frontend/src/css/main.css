@@ -77,6 +77,24 @@
 }
 
 .datosDocente {
-  background-color: grey;
+  background: grey;
   color: white;
+}
+
+.colorEstudiantes {
+  background: #a3b6ac;
+}
+
+.textoCard {
+  font-size: 14px !important;
+  color: grey;
+}
+
+.margenCard {
+  margin-bottom: 0px !important;
+}
+
+.docentes {
+  background: #ffd185;
+  border-radius: 10px;
 }
