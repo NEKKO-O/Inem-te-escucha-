@@ -11,11 +11,11 @@ class login_p extends Component {
         <Header />
         <div className="centrar margen">
           <div className="m-5">
-            <h1 class="centrar">Profesores</h1>
+            <h1 className="centrar">Profesores</h1>
             <div className="centrar">
               <img src="https://i.imgur.com/rbbY1vq.png" alt="Estudiante" />
             </div>
-            <Form />
+            <Form link="p" />
           </div>
         </div>
       </div>

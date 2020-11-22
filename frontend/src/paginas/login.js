@@ -11,11 +11,11 @@ class Login extends Component {
         <div className="centrar margen">
           <div className="m-5">
             <img src="https://i.imgur.com/rbbY1vq.png" alt="profesor" />
-            <p class="texto margen">
+            <p className="texto margen">
               <strong>Profesor</strong>
             </p>
             <div className="centrar">
-              <a href="none" class="btn btn-secondary btn-lg texto">
+              <a href="/loginp" className="btn btn-secondary btn-lg texto">
                 Ingresar
               </a>
             </div>
@@ -23,11 +23,11 @@ class Login extends Component {
 
           <div className="m-5">
             <img src="https://i.imgur.com/cdLcAS2.png" alt="profesor" />
-            <p class="texto margen">
+            <p className="texto margen">
               <strong>Estudiante</strong>
             </p>
             <div className="centrar">
-              <a href="none" class="btn btn-secondary btn-lg texto">
+              <a href="/logine" className="btn btn-secondary btn-lg texto">
                 Ingresar
               </a>
             </div>

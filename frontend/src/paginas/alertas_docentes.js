@@ -5,6 +5,22 @@ import "../css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class alertasp extends Component {
+  state = {
+    alertas: []
+  };
+
+  componentDidMount() {
+    fetch(
+      `https://backend.nekkoo.repl.co/api/alertas/${this.props.match.params.id}`
+    )
+      .then((res) => res.json())
+      .then((res) => {
+        this.setState({
+          alertas: res
+        });
+      });
+  }
+
   render() {
     return (
       <div>
@@ -14,10 +30,11 @@ class alertasp extends Component {
         </div>
 
         <div className="centrar margen">
-          <h2>(NUMERO DE NOTIFICACIONES)</h2>
+          <h2>{this.state.alertas.length}</h2>
         </div>
-
-        <Alertasd />
+        {this.state.alertas.map((e) => {
+          return <Alertasd key={e.id_alerta} data={e} />;
+        })}
 
         <div className="centrar">
           <img src="https://i.imgur.com/bGiXQAR.png" alt="escudo" />

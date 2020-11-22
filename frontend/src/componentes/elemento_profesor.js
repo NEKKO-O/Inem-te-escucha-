@@ -3,19 +3,34 @@ import "../css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Elementop extends Component {
+  state = {
+    res: {}
+  };
+
+  componentDidMount() {
+    fetch(`https://backend.nekkoo.repl.co/api/buscarprofesor/${this.props.id}`)
+      .then((res) => res.json())
+      .then((res) => {
+        this.setState({
+          res: res[0]
+        });
+      })
+      .catch((err) => console.log(err));
+  }
+
   render() {
     return (
       <div>
         <div className="centrar margen">
           <div>
-            <h1 class="margen">Correo: *INSERTAR*</h1>
-            <h1 class="margen">Telefono: *INSERTAR*</h1>
-            <h1 class="margen">Bloque: *INSERTAR*</h1>
-            <h1 class="margen">Salón: *INSERTAR*</h1>
+            <h1 className="margen">Correo: {this.state.res.correo}</h1>
+            <h1 className="margen">Telefono: {this.state.res.telefono}</h1>
+            <h1 className="margen">Bloque: {this.state.res.bloque}</h1>
+            <h1 className="margen">Salón: {this.state.res.salon}</h1>
             <div className="centrar">
               <a
-                href="login_estudiantes.html"
-                class="btn btn-danger btn-lg texto"
+                href={`/descripciona/${this.props.id}`}
+                className="btn btn-danger btn-lg texto"
               >
                 ¡Alertar!
               </a>

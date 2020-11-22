@@ -7,9 +7,9 @@ class Header extends Component {
     return (
       <div className="header">
         <div>
-          <a class="logo Flecha" href="none">
+          <a className="logo Flecha" href="none">
             <img
-              class="logos"
+              className="logos"
               src="https://i.imgur.com/Mi9ls8n.png"
               alt="logo"
             />
@@ -18,16 +18,16 @@ class Header extends Component {
 
         <div>
           <img
-            class="logoINEM"
+            className="logoINEM"
             src="https://i.imgur.com/vg6waal.png"
             alt="logo"
           />
         </div>
 
         <div>
-          <a class="logo Flecha" href="none">
+          <a className="logo Flecha" href="none">
             <img
-              class="logos"
+              className="logos"
               src="https://i.imgur.com/BRxkOB9.png"
               alt="logo"
             />

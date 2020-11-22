@@ -8,7 +8,7 @@ class Principal extends Component {
       <div>
         <div className="centrar">
           <img
-            class="tamañoImagen"
+            className="tamañoImagen"
             src="https://i.imgur.com/BeSmTFb.png"
             alt="logo"
           />
@@ -19,7 +19,7 @@ class Principal extends Component {
         </div>
 
         <div className="centrar">
-          <p class="texto margen">
+          <p className="texto margen">
             INEM te escucha es una plataforma que ayuda a comunicarnos mejor con
             nuestros profesores.
           </p>
@@ -27,14 +27,14 @@ class Principal extends Component {
 
         <div className="centrar">
           <img
-            class="tamañoFoto"
+            className="tamañoFoto"
             src="https://i.imgur.com/x6OYRW7.jpg"
             alt="foto"
           />
         </div>
 
         <div className="centrar">
-          <a href="none" class="btn btn-secondary bnt-lg texto">
+          <a href="/login" className="btn btn-secondary bnt-lg texto">
             Ingresar
           </a>
         </div>

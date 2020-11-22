@@ -1,17 +1,16 @@
 {
-  "name": "react",
+  "name": "inem-te-escucha",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "bootstrap": "4.5.3",
+    "cors": "2.8.5",
     "react": "17.0.0",
     "react-bootstrap": "1.4.0",
     "react-dom": "17.0.0",
+    "react-router-dom": "5.2.0",
     "react-scripts": "3.4.3"
   },
   "devDependencies": {

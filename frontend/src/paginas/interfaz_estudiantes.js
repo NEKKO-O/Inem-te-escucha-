@@ -4,6 +4,23 @@ import "../css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Interfaze extends Component {
+  state = {
+    res: {}
+  };
+
+  componentDidMount() {
+    fetch(
+      `https://backend.nekkoo.repl.co/api/buscarestudiante/${this.props.match.params.id}`
+    )
+      .then((res) => res.json())
+      .then((res) => {
+        this.setState({
+          res: res[0]
+        });
+      })
+      .catch((err) => console.log(err));
+  }
+
   render() {
     return (
       <div>
@@ -11,28 +28,28 @@ class Interfaze extends Component {
         <div className="centrar margen">
           <div className="centrar">
             <img
-              styleProp="width: 180px; height: 180px;"
+              style={{ width: "180px", height: "180px" }}
               src="https://i.imgur.com/cdLcAS2.png"
               alt="profesor"
             />
             <div
-              styleProp="border-radius: 5px;"
+              style={{ borderRadius: "5px" }}
               className="datosDocente p-3 ml-5"
             >
-              <h1>NOMBRE ESTUDIANTE</h1>
+              <h1>{this.state.res.nombre}</h1>
             </div>
           </div>
         </div>
 
         <div className="centrar mt-5">
-          <a href="none" class="btn btn-danger btn-lg texto">
+          <a href="/listad" className="btn btn-danger btn-lg texto">
             Lista de maestros
           </a>
         </div>
 
         <div className="centrar">
           <img
-            class="margen"
+            className="margen"
             src="https://i.imgur.com/bGiXQAR.png"
             alt="escudo"
           />

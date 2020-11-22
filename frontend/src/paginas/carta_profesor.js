@@ -10,8 +10,8 @@ class Cartap extends Component {
     return (
       <div>
         <Header />
-        <Docente />
-        <Elementop />
+        <Docente id={this.props.match.params.codigo} />
+        <Elementop id={this.props.match.params.codigo} />
       </div>
     );
   }

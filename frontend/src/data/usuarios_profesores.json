@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "codigo": "180293",
+    "contraseña": "1234",
+    "id_profesor": 1
+  },
+  {
+    "id": 2,
+    "codigo": "314123",
+    "contraseña": "4321",
+    "id_profesor": 1
+  }
+]

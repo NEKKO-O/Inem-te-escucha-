@@ -5,6 +5,21 @@ import "../css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Listad extends Component {
+  state = {
+    res: []
+  };
+
+  componentDidMount() {
+    fetch(`https://backend.nekkoo.repl.co/api/profesores`)
+      .then((res) => res.json())
+      .then((res) => {
+        this.setState({
+          res: res
+        });
+      })
+      .catch((err) => console.log(err));
+  }
+
   render() {
     return (
       <div>
@@ -15,7 +30,9 @@ class Listad extends Component {
         </div>
 
         <div>
-          <Cardp />
+          {this.state.res.map((e) => {
+            return <Cardp data={e} />;
+          })}
         </div>
       </div>
     );
